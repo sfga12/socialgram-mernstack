@@ -11,7 +11,7 @@ main {
 }
 
 .header_background {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -41,7 +41,7 @@ nav a{
   align-items: center;
   display: flex;
   text-decoration: none;
-  margin-right: 60px;
+  margin-left: 60px;
   
 }
 nav img {
@@ -65,12 +65,23 @@ nav span  {
 }
 
 .post {
+  margin-top: 20px;
   width: 446px;
   height: 627px;
+  background-color: #F8F5EA;
+  border-right: 2px solid #F8F5EA;
+  border-left: 2px solid #F8F5EA;
+
+}
+.post_image_content {
+  width: 446px;
+  height: 533px;
+  overflow: hidden;
 }
 .post_image_content img {
-  width: 100%;
+  width: auto;
   height: 100%;
+  object-fit: cover;
 }
 .post_stats {
   height: 22px;
@@ -105,7 +116,15 @@ nav span  {
   display: flex;
   align-items: center;
 }
-
+.post_stats span {
+  color: #262626;
+  padding-top: 3px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 138.462% */
+}
 .post_stats_view {
   display: flex;
   align-items: center;
@@ -119,4 +138,64 @@ nav span  {
 
 }
  
- 
+.post_author {
+  border: 1px solid #F8F5EA;
+  background: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .post_author_image {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  overflow: hidden;
+ }
+ .post_author_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post_content span {
+  color: #262626;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 138.462% */
+}
+.post_author_details_fullname {
+  color: #952323;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.post_author_details_username {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+.post_author_details {
+  width: 389px;
+}
+.post_author_details_name {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
