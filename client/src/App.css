@@ -63,3 +63,60 @@ nav span  {
 
 
 }
+
+.post {
+  width: 446px;
+  height: 627px;
+}
+.post_image_content img {
+  width: 100%;
+  height: 100%;
+}
+.post_stats {
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post_stats svg {
+  fill: rgba(149, 35, 35, 0);
+  stroke-width: 1px;
+  stroke: #111;
+}
+.post_stats span {
+  margin-bottom: 1px;
+  margin-left: 6px;
+}
+.post_stats_like {
+  display: flex;
+  align-items: center;
+}
+
+.post_stats_repost {
+  display: flex;
+  align-items: center;
+}
+
+.post_stats_comment {
+  display: flex;
+  align-items: center;
+}
+.post_stats_bookmark {
+  display: flex;
+  align-items: center;
+}
+
+.post_stats_view {
+  display: flex;
+  align-items: center;
+}
+.post_stats_view span {
+ margin: 0px;
+ margin-right: 5px;
+}
+.post_stats_bookmark svg {
+  stroke-width: 0px;
+
+}
+ 
+ 
