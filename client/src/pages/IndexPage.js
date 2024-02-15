@@ -6,6 +6,7 @@ export default function IndexPage() {
         <Post/>
         <Post/>
         <Post/>
+        
 
        </div> 
     );
