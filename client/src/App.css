@@ -71,6 +71,8 @@ nav span  {
   background-color: #F8F5EA;
   border-right: 2px solid #F8F5EA;
   border-left: 2px solid #F8F5EA;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 .post_image_content {
@@ -194,7 +196,6 @@ nav span  {
 .posts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 10px;
 
 }
