@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import closeicon from './assets/closeicon.svg'
-
+import closeicon from './assets/closeicon.svg';
+import facebooklogin_page from './assets/facebooklogin.svg';
+import googlelogin_page from './assets/googlelogin.svg';
 function LoginModal() {
   const [showModal, setShowModal] = useState(false);
 
@@ -19,7 +20,19 @@ function LoginModal() {
               setShowModal(false);
             }}> <img src={closeicon} alt="" /> </span>
             <h1>Log in to Socialgram</h1>
-            <p>Bu bir modal penceresidir.</p>
+            <form action="">
+            <input type="text"
+             placeholder="Username"/>
+            <input type="password"
+             placeholder="Password"/>
+
+             <a className='forgotpass_login_box' href="">Forgot Password?</a>
+            <button className="loginbutton">Login</button>
+
+            <button className='facebook_login_button'><img src={facebooklogin_page} alt="" /></button>
+            <button className='facebook_login_button'><img src={googlelogin_page} alt="" /></button>
+            <h7>Don't have an account? <a href="">Register</a></h7>
+            </form>
           </div>
         </div>
       )}
